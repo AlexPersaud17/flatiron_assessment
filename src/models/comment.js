@@ -4,11 +4,12 @@ class Comment{
     this.commentContent = comment
     this.imageObj = this.findImage(imageId)
     this.id = this.all().length
-    
+    this.commentEl()
+    debugger
   }
 
   all(){
-    return []
+    return this.imageObj.comments
   }
 
   findImage(imageId){
@@ -20,7 +21,7 @@ class Comment{
   }
 
   commentEl(){
-
+    return `<li id="image-${this.imageObj.id}-comment-${this.id}>${this.commentContent}</li>`
   }
 
 }
