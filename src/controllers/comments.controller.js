@@ -15,6 +15,7 @@ class CommentsController {
         e.preventDefault()
         var $form = $(this)
         var comment = $form.children(".user-text").val()
+        var imageId = $form.parent().attr('data-id')
         debugger
 
       })
