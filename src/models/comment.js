@@ -15,7 +15,8 @@ class Comment{
     this.imageObj = Image.all.find(function(image){
       return image.id === imageId
     })
-    debugger
+    this.imageObj.comments.push(this)
+    return this.imageObj
   }
 
   commentEl(){
