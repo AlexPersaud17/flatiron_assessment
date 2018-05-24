@@ -5,6 +5,7 @@ class CommentsController {
 
   init() {
     // kick off controller from here
+    this.addCommentFormListener()
   }
 
   addCommentFormListener() {
