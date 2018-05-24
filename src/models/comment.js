@@ -4,14 +4,18 @@ class Comment{
     this.commentContent = comment
     this.imageObj = this.findImage(imageId)
     this.id = this.all().length
-  }
-
-  all(){
     
   }
 
-  findImage(imageId){
+  all(){
+    return []
+  }
 
+  findImage(imageId){
+    this.imageObj = Image.all.find(function(image){
+      return image.id === imageId
+    })
+    debugger
   }
 
   commentEl(){

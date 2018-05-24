@@ -16,7 +16,7 @@ class CommentsController {
         e.preventDefault()
         var $form = $(this)
         var comment = $form.children(".user-text").val()
-        var imageId = $form.parent().attr('data-id')
+        var imageId = parseInt($form.parent().attr('data-id'))
         var newComment = new Comment(comment, imageId)
         thisController.render(newComment)
         $form.trigger("reset")
