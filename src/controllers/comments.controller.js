@@ -9,5 +9,10 @@ class CommentsController {
 
   addCommentFormListener() {
     // create comment form listener code here
+    this.$addCommentForm.each(function(i){
+      $(this).submit(function(e){
+        e.preventDefault()
+      })
+    })
   }
 }
