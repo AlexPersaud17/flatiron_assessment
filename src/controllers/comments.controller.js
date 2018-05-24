@@ -4,12 +4,10 @@ class CommentsController {
   }
 
   init() {
-    // kick off controller from here
     this.addCommentFormListener()
   }
 
   addCommentFormListener() {
-    // create comment form listener code here
     var thisController = this
     this.$addCommentForm.each(function(i){
       $(this).submit(function(e){
