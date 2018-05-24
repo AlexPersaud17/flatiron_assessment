@@ -25,6 +25,6 @@ class CommentsController {
   }
 
   render(commentObj){
-    // $(`#comments-${id from the image associated with this comment}`).append(html for the comment)
+    $(`#comments-${commentObj.imageObj.id}`).append(commentObj.commentEl())
   }
 }
