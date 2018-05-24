@@ -16,7 +16,7 @@ class CommentsController {
         var $form = $(this)
         var comment = $form.children(".user-text").val()
         var imageId = $form.parent().attr('data-id')
-        debugger
+        var newComment = new Comment(comment, imageId)
 
       })
     })
