@@ -13,6 +13,10 @@ class CommentsController {
     this.$addCommentForm.each(function(i){
       $(this).submit(function(e){
         e.preventDefault()
+        var $form = $(this)
+        var comment = $form.children(".user-text").val()
+        debugger
+
       })
     })
   }
